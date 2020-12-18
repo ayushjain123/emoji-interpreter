@@ -7,7 +7,14 @@ var emojiDictionary = {
   "😔": "sad",
   "🥡": "takeout box",
   "❤️": "love",
-  "😑": "annoyance"
+  "😑": "annoyance",
+  "🙈": "Evil Monkey Eyes-Closed",
+  "🙉": "Evil Monkey Ears-Closed",
+  "🙊": "Evil Monkey Mouth-Closed",
+  "🐶": "Dog Face",
+  "🐱": "Cat Face",
+  "🐷": "Piggy Face",
+  "🐿️": "Chipmunk"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -35,9 +42,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>inside outt!</h1>
+      <h1>Emoji Interpreter</h1>
 
-      <input onChange={emojiInputHandler} />
+      <input onChange={emojiInputHandler} placeholder="Input Emoji"></input>
 
       <h2> {meaning} </h2>
       {/* Actual output set by React using useState */}
